@@ -122,7 +122,7 @@ public class AesCipherWithUnirest {
         		  .header("cache-control", "no-cache")
         		  .body("------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"Data\"\r\n\r\n"+strEncryptedPolicyXml+"\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"Ref\"\r\n\r\n"+ref+"\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--")
         		  .asString();
-        System.out.println(response);
+        System.out.println("\n\n"+response.getBody()+"\n\n");
         
     }
 }
